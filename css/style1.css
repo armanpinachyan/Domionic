@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+:root{
+--black: #2b2a2c;
+--gray: #717072;
+--light-gray: #dedede;
+--white: #fff;  
+}
+
+*{
+font-family: 'Montserrat', sans-serif;
+padding: 0; margin: 0;
+border: none; outline: none;
+text-transform: capitalize;
+text-decoration: none;
+transition: all .2s linear;
+box-sizing: border-box;
+}
+
+.container{
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;    
+}
+
+.heading{
+ font-size:45px ;
+ color: var(--black);
+ font-weight: bold;
+ text-align: center;
+ text-transform: uppercase;
+ margin-top: 51px;
+ margin-bottom: 21px;   
+}
+
+.btn{
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--gray);
+    cursor: pointer;
+    border: 1px solid var(--black);
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: none;
+    text-align: center;
+}
+
+.btn:hover{
+    background: var(--gray);
+    color: var(--white);
+}
+
+/* ..............header............ */
+
+
+header .container .inner{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 18px;   
+}
+
+header .container .inner .user{
+ display: flex;   
+}
+
+header .container .inner .user img{
+ border-radius: 50px;
+ margin-right: 10px;   
+}
+
+header .container .inner .user .content h3{
+font-size: 16px;
+color: var(--black);
+margin-bottom: 7px;    
+}
+
+header .container .inner .user .content p{
+ font-size: 12px;
+ color: #6a696b;   
+}
+
+header .container .inner .navbar a{
+font-size: 14px;
+color: var(--black);
+font-weight: bold;
+text-transform: uppercase;
+margin-right: 38px;    
+}
+
+header .container .inner .navbar a:hover{
+border-bottom: 3px solid var(--black);
+padding-bottom: 5px;    
+}
+
+
+/* ...............intro............ */
+
+.intro .container .inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+border-bottom: 1px solid #6a696b;
+padding-bottom: 12px;    
+}
+
+.intro .container .inner .content h3{
+  font-size: 32px;
+  color: var(--black);
+  font-weight: 300;
+  margin-bottom: 12px;  
+}
+
+.intro .container .inner .content h1{
+ font-size: 45px;
+ color: var(--black);
+ margin-bottom: 20px;   
+}
+
+.intro .container .inner .content p{
+ font-size: 18px;
+ color: #6a696b;
+ margin-bottom: 30px;   
+}
+
+.intro .container .inner .content .social{
+display: flex;
+margin-bottom: 42px;    
+}
+
+.intro .container .inner .content .social a{
+margin-right: 11px;    
+}
+
+.intro .container .inner .content .social a:hover{
+ transform: rotateZ(360deg);
+ transition: .6s linear;   
+}
+
+
+/* ............work............. */
+
+.work .container .inner{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap; 
+     
+}
+
+.work .container .inner .box{
+box-shadow: 0 0 5px var(--gray);
+border-radius: 10px;  
+ 
+}
+
+.work .container .inner .box:hover{
+box-shadow: 0 0 15px var(--black);
+cursor: pointer;    
+}
+
+.work .container .inner .box .content{
+ padding: 16px;   
+}
+
+.work .container .inner .box .content h3{
+ font-size: 12px;
+ color: var(--black);
+ font-weight: 400;
+ text-transform: uppercase;
+ margin-bottom: 16px;   
+}
+
+.work .container .inner .box .content .shop{
+display: flex;
+justify-content: space-between;    
+}
+
+.work .container .inner .box .content .shop p{
+ font-size: 16px;
+ color: var(--black);
+ font-weight: bold;
+ text-transform: uppercase;   
+}
+
+
+/* .............about............ */
+
+.about .container .inner{
+display: flex;
+justify-content: space-between;
+position: relative;
+margin-top: 113px; 
+}
+
+.about .container .inner .gray{
+width: 414px;
+height: 414px;
+background: #efefef;
+position: absolute;
+z-index: -1;
+bottom: 0; left: 19px;    
+}
+
+.about .container .inner img{
+margin-left: 73px;
+margin-right: 121px;    
+}
+
+.about .container .inner .content h3{
+ margin-top: 80px;
+ font-size: 45px;
+ color: var(--black);
+ text-transform: uppercase;
+ margin-bottom: 27px;   
+}
+
+.about .container .inner .content h2{
+font-size: 92px;
+color: var(--light-gray);
+text-transform: uppercase;
+margin-bottom: 46px;    
+}
+
+.about .container .inner .content p{
+ font-size: 12px;
+ color: var(--gray);
+ font-weight: 300;
+ line-height: 24px;
+ margin-bottom: 59px;   
+}
+
+/* .............reviews............. */
+
+.reviews{
+background: url(../images/reviews.png) #332f30 center no-repeat ;
+background-size: cover;
+/* background-image: url(../images/reviews.png);
+background-color: #332f30;
+background-position: center;
+background-repeat: no-repeat; */
+margin-top: 113px;
+position: relative;
+padding: 51px 0;
+}
+
+.reviews .container .inner .content{
+ max-width: 800px;
+ width: 100%;
+ margin: 0 auto;
+ text-align: center;
+ margin-bottom: 22px;
+}
+
+.reviews .container .inner .content p{
+ font-size: 14px;
+ color: var(--white);
+ font-weight: 100;
+ line-height: 33px; 
+}
+
+.reviews .container .inner .author{
+position: absolute;
+left: calc(50% - 51px);
+text-align: center;
+}
+
+.reviews .container .inner .author h3{
+ font-size: 16px;
+ color: var(--black);
+ margin-top: 13px;
+ margin-bottom: 7px; 
+}
+
+.reviews .container .inner .author p{
+  font-size: 14px;
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.reviews .container .inner .author .stars .unactive{
+ opacity: .6; 
+}
+
+
+/* ..........courses......... */
+
+.courses{
+ margin-top: 235px; 
+}
+
+.courses .container .text{
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray);
+  font-weight: 300;
+  margin-top: 19px;
+  margin-bottom: 60px;
+}
+
+.courses .container .inner{
+ display: flex;
+ justify-content: space-between; 
+ flex-wrap: wrap;
+ gap: 31px;
+}
+
+.courses .container .inner .box{
+  width: 30%;
+}
+
+
+.courses .container .inner .box h3{
+font-size: 18px;
+color: var(--black);
+text-transform: uppercase;
+margin-top: 26px;
+margin-bottom: 16px;
+}
+
+.courses .container .inner .box h4{
+font-size: 12px;
+color: var(--black);
+font-weight: 400;
+text-transform: uppercase;
+margin-bottom: 29px;  
+}
+
+.courses .container .inner .box p{
+font-size: 12px;
+color: var(--gray);
+font-weight: 300;
+line-height: 24px;
+margin-bottom: 40px;  
+}
+
+.courses .container .inner .box .btn{
+ width: 127px;
+ font-size: 14px;
+ font-weight: bold;
+ padding: 12px; 
+ border: 2px solid;
+}
+
+.courses .container .link{
+ text-align: right; 
+}
+
+.courses .container .link a{
+ font-size: 14px;
+ color: var(--gray);
+ font-weight: 400;
+ text-decoration: underline;
+ margin-top: 19px; 
+}
+
+/* ....................footer............... */
+
+footer{
+ background: var(--black);
+ padding: 20px 0;
+ margin-top: 125px;
+}
+
+footer .container .inner{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap; 
+}
+
+footer .container .inner .info{
+display: flex;  
+}
+
+footer .container .inner .info .copyright p{
+font-size: 14px;
+color: #8d8d8e;
+border-right: 1px solid #413f41;
+padding-right: 23px;
+margin-right: 17px;
+}
+
+footer .container .inner .info .social {
+display: flex;
+}
+
+footer .container .inner .info .social a{
+ margin-right: 17px; 
+}
+
+footer .container .inner .navbar{
+display: flex;  
+}
+
+footer .container .inner .navbar a{
+  font-size: 14px;
+  color: #8d8d8e;
+  margin-right: 18px;
+}
+
+
+/* ..............@media............ */
+
+
+@media (max-width: 1200px){
+  
+section{
+  padding: 0 3%;
+}
+
+header{
+  padding: 0 3%;
+}
+
+footer{
+  padding: 10px 3%;
+}
+
+.work .container .inner .box{
+ width: 33%; 
+}
+
+.work .container .inner .box img{
+  width: 100%;
+}
+
+.courses .container .inner .box{
+ width: 30%; 
+}
+
+.courses .container .inner .box img{
+width: 100%;
+}
+
+.intro .container .inner{
+ flex-wrap: nowrap; 
+}
+
+}
+
+@media (max-width: 979px){
+
+html{
+  font-size: 90%;
+}
+
+.intro .container .inner{
+  flex-wrap: wrap-reverse;
+  margin-top: 20px;
+} 
+  
+.intro .container .inner img{
+  width: 100%;
+}
+
+.intro .container .inner .content{
+ padding: 16px 10px; 
+}
+
+.intro .container .inner .content h3{
+  font-size: 22px;
+}
+
+.intro .container .inner .content h1{
+  font-size: 35px;
+}
+
+.about .container .inner img{
+ display: none; 
+}
+
+.about .container .inner .gray{
+  display: none;
+}
+
+.courses .container .inner .box{
+  width: 30%; 
+ }
+
+
+}
+
+
+@media (max-width: 767px){
+
+header .container .inner .user{
+ display: none; 
+}
+
+header .container .inner .navbar{
+ margin: 0 auto; 
+}
+
+.work .container .inner .box{
+ width: 100%;
+ margin-bottom: 20px;
+ border-radius: 20px; 
+}
+
+.courses .container .inner .box{
+ width: 100%; 
+}
+
+
+}
+
